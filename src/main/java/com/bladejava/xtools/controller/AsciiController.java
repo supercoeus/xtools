@@ -9,13 +9,13 @@ public class AsciiController {
 
 	@Route("img2ascii")
 	public ModelAndView img2ascii(ModelAndView mav){
-		mav.setView("ascii/img2ascii.html");
+		mav.setView("ascii/img2ascii");
 		return mav;
 	}
 
 	@Route("text2ascii")
 	public ModelAndView text2ascii(ModelAndView mav){
-		mav.setView("ascii/text2ascii.html");
+		mav.setView("ascii/text2ascii");
 		return mav;
 	}
 	

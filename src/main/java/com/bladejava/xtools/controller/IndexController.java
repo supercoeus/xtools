@@ -9,7 +9,7 @@ public class IndexController {
 
 	@Route("/")
 	public ModelAndView index(ModelAndView mav){
-		mav.setView("index.html");
+		mav.setView("index");
 		return mav;
 	}
 	
