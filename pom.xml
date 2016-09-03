@@ -33,6 +33,11 @@
 			<version>0.4.8</version>
 		</dependency>
 		<dependency>
+			<groupId>com.github.lalyos</groupId>
+			<artifactId>jfiglet</artifactId>
+			<version>0.0.7</version>
+		</dependency>
+		<dependency>
 			<groupId>com.bladejava</groupId>
 			<artifactId>blade-embed-jetty</artifactId>
 			<version>0.0.4</version>
