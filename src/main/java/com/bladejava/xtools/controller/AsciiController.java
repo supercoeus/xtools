@@ -2,7 +2,7 @@ package com.bladejava.xtools.controller;
 
 import com.blade.annotation.Controller;
 import com.blade.annotation.Route;
-import com.blade.view.ModelAndView;
+import com.blade.mvc.view.ModelAndView;
 
 @Controller("ascii")
 public class AsciiController {

@@ -3,8 +3,8 @@ package com.bladejava.xtools.config;
 import com.blade.config.ApplicationConfig;
 import com.blade.config.BaseConfig;
 import com.blade.ioc.annotation.Component;
-import com.blade.view.ViewSettings;
-import com.blade.view.template.JetbrickTemplateEngine;
+import com.blade.mvc.view.ViewSettings;
+import com.blade.mvc.view.template.JetbrickTemplateEngine;
 
 @Component
 public class Config implements BaseConfig{
