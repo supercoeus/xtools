@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>世界最强Ascii转换器</title>
+    <meta charset="utf-8"/>
+    <meta author="biezhi" />
+    <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+</head>
+<body>
+<div class="wrapper">
+    <h1>世界最强Ascii转换器</h1>
+
+    <div class="top">
+        <div class="left">
+            <h2>源图片</h2>
+            <div class="row">
+                <div class="source-image-area-out">
+                    <div id="source-image-area">
+                        拖动图片文件到这里...
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <label for="source-image-file" style="width: 150px">或者点击浏览上传:</label>
+                <input type="file" id="source-image-file" />
+            </div>
+
+            <h2>设置</h2>
+            <div class="left">
+                <div class="row">
+                    <label for="input-used-text">使用的字符:</label>
+                    <input type="text" id="input-used-text" value="01" />
+                </div>
+                <div class="row">
+                    <label for="input-font-size">字体大小:</label>
+                    <input type="number" id="input-font-size" min="3" max="20" step="1" value="8" style="width: 65px" />
+                    px
+                </div>
+            </div>
+            <div class="right">
+                <div class="row">
+                    <label for="input-background-color">背景色:</label>
+                    <input type="color" id="input-background-color" value="#000" />
+                </div>
+                <div class="row">
+                    <label for="input-background-transparent">是否透明:</label>
+                    <input type="checkbox" id="input-background-transparent" />
+                </div>
+            </div>
+
+            <div class="row buttons-row">
+                <input type="button" id="create-button" value="生成" disabled="disabled" />
+                <input type="button" id="full-screen-button" value="全屏查看" disabled="disabled" />
+            </div>
+        </div>
+
+        <div class="right">
+            <h2>使用方法</h2>
+            <ol>
+                <li>上传 <b>源图片</b> (拖动进来也是可以的)</li>
+                <li>设置生成的字符和文字大小</li>
+                <li>选择背景色</li>
+                <li>点击生成按钮</li>
+                <li>点击全屏查看按钮可以在新窗口中查看生成后的图片</li>
+            </ol>
+        </div>
+    </div>
+    <br class="clear" />
+
+    <div class="bottom">
+
+        <div class="right">
+            <h2>预览</h2>
+        </div>
+        <div id="preview-source" class="left">
+            <img src="" id="image-source" alt="" />
+        </div>
+
+        <div id="preview-result" class="right">
+
+            <img src="" id="image-result" alt="" />
+        </div>
+
+    </div>
+</div>
+<canvas id="canvas"></canvas>
+<script src="/static/js/Previews.js"></script>
+<script src="/static/js/Input.js"></script>
+<script src="/static/js/Converter.js"></script>
+<script src="/static/js/app.js"></script>
+</body>
+</html>
